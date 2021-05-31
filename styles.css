@@ -1,8 +1,5 @@
 [contenteditable='true']:active,
 [contenteditable='true']:focus {
   outline: none;
-}
-
-[contenteditable='true'] {
   text-decoration: underline;
 }
