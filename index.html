@@ -1,0 +1,183 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Deparment: <span contenteditable="true">Hygine</span> </h1>
+      </div>
+      <div class="col">
+        <h2>Month: <span contenteditable="true">May</span></h2>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div id="table" class="table-editable">
+      <span class="table-add glyphicon glyphicon-plus"></span>
+      <table class="table">
+        <tr>
+          <th></th>
+          <th scope="col">Monday</th>
+          <th scope="col">Tuesdsay</th>
+          <th scope="col">Wed</th>
+          <th scope="col">Thursday</th>
+          <th scope="col">Friday</th>
+        </tr>
+        <tr>
+          <td>Week 1</td>
+          <td contenteditable="true">3</td>
+          <td contenteditable="true">4</td>
+          <td contenteditable="true">5</td>
+          <td contenteditable="true">6</td>
+          <td contenteditable="true">7</td>
+        </tr>
+        <tr>
+          <td>Target</td>
+          <td data-target="11" contenteditable="true">30</td>
+          <td data-target="12" contenteditable="true">40</td>
+          <td data-target="13" contenteditable="true">50</td>
+          <td data-target="14" contenteditable="true">60</td>
+          <td data-target="15" contenteditable="true">70</td>
+        </tr>
+
+        <tr>
+          <td>Actual</td>
+          <td data-actual="11" contenteditable="true"></td>
+          <td data-actual="12" contenteditable="true"></td>
+          <td data-actual="13" contenteditable="true"></td>
+          <td data-actual="14" contenteditable="true"></td>
+          <td data-actual="15" contenteditable="true"></td>
+        </tr>
+
+        <tr>
+          <td>+/-</td>
+          <td data-final="11"></td>
+          <td data-final="12"></td>
+          <td data-final="13"></td>
+          <td data-final="14"></td>
+          <td data-final="15"></td>
+        </tr>
+
+
+
+        <tr>
+          <th></th>
+          <th scope="col">Monday</th>
+          <th scope="col">Tuesdsay</th>
+          <th scope="col">Wed</th>
+          <th scope="col">Thursday</th>
+          <th scope="col">Friday</th>
+        </tr>
+        <tr>
+          <td>Week 2</td>
+          <td contenteditable="true">8</td>
+          <td contenteditable="true">9</td>
+          <td contenteditable="true">10</td>
+          <td contenteditable="true">11</td>
+          <td contenteditable="true">12</td>
+        </tr>
+        <tr>
+          <td>Target</td>
+          <td data-target="21" contenteditable="true">30</td>
+          <td data-target="22" contenteditable="true">40</td>
+          <td data-target="23" contenteditable="true">50</td>
+          <td data-target="24" contenteditable="true">60</td>
+          <td data-target="25" contenteditable="true">70</td>
+        </tr>
+
+        <tr>
+          <td>Actual</td>
+          <td data-actual="21" contenteditable="true"></td>
+          <td data-actual="22" contenteditable="true"></td>
+          <td data-actual="23" contenteditable="true"></td>
+          <td data-actual="24" contenteditable="true"></td>
+          <td data-actual="25" contenteditable="true"></td>
+        </tr>
+
+        <tr>
+          <td>+/-</td>
+          <td data-final="21"></td>
+          <td data-final="22"></td>
+          <td data-final="23"></td>
+          <td data-final="24"></td>
+          <td data-final="25"></td>
+        </tr>
+
+
+        <tr>
+          <th></th>
+          <th scope="col">Monday</th>
+          <th scope="col">Tuesdsay</th>
+          <th scope="col">Wed</th>
+          <th scope="col">Thursday</th>
+          <th scope="col">Friday</th>
+        </tr>
+        <tr>
+          <td>Week 3</td>
+          <td contenteditable="true">8</td>
+          <td contenteditable="true">9</td>
+          <td contenteditable="true">10</td>
+          <td contenteditable="true">11</td>
+          <td contenteditable="true">12</td>
+        </tr>
+        <tr>
+          <td>Target</td>
+          <td data-target="21" contenteditable="true">30</td>
+          <td data-target="22" contenteditable="true">40</td>
+          <td data-target="23" contenteditable="true">50</td>
+          <td data-target="24" contenteditable="true">60</td>
+          <td data-target="25" contenteditable="true">70</td>
+        </tr>
+
+        <tr>
+          <td>Actual</td>
+          <td data-actual="21" contenteditable="true"></td>
+          <td data-actual="22" contenteditable="true"></td>
+          <td data-actual="23" contenteditable="true"></td>
+          <td data-actual="24" contenteditable="true"></td>
+          <td data-actual="25" contenteditable="true"></td>
+        </tr>
+
+        <tr>
+          <td>+/-</td>
+          <td data-final="21"></td>
+          <td data-final="22"></td>
+          <td data-final="23"></td>
+          <td data-final="24"></td>
+          <td data-final="25"></td>
+        </tr>
+      </table>
+    </div>
+
+    <button  id="cmd" class="btn btn-primary">Download PDF</button>
+    <p id="export"></p>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.min.js"></script>
+<script src="script.js"></script>
+
+</html>
